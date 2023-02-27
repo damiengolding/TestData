@@ -1,0 +1,73 @@
+[[10.0.1.10]]
+ victim.strikeforce.net.        SOA    vnetdcpki.victim.strikeforce.net hostmaster.victim.strikeforce.net. (424 900 600 86400 3600)
+ victim.strikeforce.net.        A      192.168.32.127
+ victim.strikeforce.net.        A      10.0.1.10
+ victim.strikeforce.net.        A      192.168.1.129
+ victim.strikeforce.net.        A      192.168.33.124
+ victim.strikeforce.net.        NS     vnetdcpki.victim.strikeforce.net
+ victim.strikeforce.net.        AAAA   2a00:23c7:9082:5200:3c6d:e877:7d0a:e543
+ victim.strikeforce.net.        AAAA   fdaa:bbcc:ddee:0:3c6d:e877:7d0a:e543
+ _msdcs                         NS     vnetdcpki.victim.strikeforce.net
+ _gc._tcp.Cambridge._sites      SRV    priority=0, weight=100, port=3268, vnetdcpki.victim.strikeforce.net
+ _kerberos._tcp.Cambridge._sites SRV    priority=0, weight=100, port=88, vnetdcpki.victim.strikeforce.net
+ _ldap._tcp.Cambridge._sites    SRV    priority=0, weight=100, port=389, vnetdcpki.victim.strikeforce.net
+ _gc._tcp.Dursley._sites        SRV    priority=0, weight=100, port=3268, vnetdcpki.victim.strikeforce.net
+ _kerberos._tcp.Dursley._sites  SRV    priority=0, weight=100, port=88, vnetdcpki.victim.strikeforce.net
+ _ldap._tcp.Dursley._sites      SRV    priority=0, weight=100, port=389, vnetdcpki.victim.strikeforce.net
+ _gc._tcp                       SRV    priority=0, weight=100, port=3268, vnetdcpki.victim.strikeforce.net
+ _kerberos._tcp                 SRV    priority=0, weight=100, port=88, vnetdcpki.victim.strikeforce.net
+ _kpasswd._tcp                  SRV    priority=0, weight=100, port=464, vnetdcpki.victim.strikeforce.net
+ _ldap._tcp                     SRV    priority=0, weight=100, port=389, vnetdcpki.victim.strikeforce.net
+ _kerberos._udp                 SRV    priority=0, weight=100, port=88, vnetdcpki.victim.strikeforce.net
+ _kpasswd._udp                  SRV    priority=0, weight=100, port=464, vnetdcpki.victim.strikeforce.net
+ DomainDnsZones                 A      10.0.1.10
+ DomainDnsZones                 A      192.168.33.124
+ DomainDnsZones                 A      192.168.32.127
+ DomainDnsZones                 A      192.168.1.129
+ DomainDnsZones                 AAAA   2a00:23c7:9082:5200:3c6d:e877:7d0a:e543
+ DomainDnsZones                 AAAA   fdaa:bbcc:ddee:0:3c6d:e877:7d0a:e543
+ _ldap._tcp.Cambridge._sites.DomainDnsZones SRV    priority=0, weight=100, port=389, vnetdcpki.victim.strikeforce.net
+ _ldap._tcp.Dursley._sites.DomainDnsZones SRV    priority=0, weight=100, port=389, vnetdcpki.victim.strikeforce.net
+ _ldap._tcp.DomainDnsZones      SRV    priority=0, weight=100, port=389, vnetdcpki.victim.strikeforce.net
+ ForestDnsZones                 A      10.0.1.10
+ ForestDnsZones                 A      192.168.33.124
+ ForestDnsZones                 A      192.168.32.127
+ ForestDnsZones                 A      192.168.1.129
+ ForestDnsZones                 AAAA   2a00:23c7:9082:5200:3c6d:e877:7d0a:e543
+ ForestDnsZones                 AAAA   fdaa:bbcc:ddee:0:3c6d:e877:7d0a:e543
+ _ldap._tcp.Cambridge._sites.ForestDnsZones SRV    priority=0, weight=100, port=389, vnetdcpki.victim.strikeforce.net
+ _ldap._tcp.Dursley._sites.ForestDnsZones SRV    priority=0, weight=100, port=389, vnetdcpki.victim.strikeforce.net
+ _ldap._tcp.ForestDnsZones      SRV    priority=0, weight=100, port=389, vnetdcpki.victim.strikeforce.net
+ MSFBUBU1404                    A      10.0.1.21
+ MSFBWIN2K8R2                   A      10.0.1.20
+ SGDDTWIN8                      A      10.0.1.22
+ VNETCOMMS                      A      10.0.0.11
+ vnetdcpki                      A      192.168.32.127
+ vnetdcpki                      A      192.168.33.124
+ vnetdcpki                      A      10.0.1.10
+ vnetdcpki                      A      192.168.1.129
+ vnetdcpki                      AAAA   fdaa:bbcc:ddee:0:3c6d:e877:7d0a:e543
+ vnetdcpki                      AAAA   2a00:23c7:9082:5200:3c6d:e877:7d0a:e543
+ VNETDTAA                       A      10.0.2.100
+ VNETDTBR                       A      10.0.3.100
+ VNETDTCC                       A      10.0.4.100
+ VNETDTCIRT                     A      10.0.20.100
+ VNETDTDD                       A      10.0.1.101
+ VNETDTFF                       A      10.0.5.100
+ VNETDTGG                       A      10.0.5.101
+ VNETDTHH                       A      10.0.6.100
+ VNETDTZZ                       A      10.0.10.100
+ VNETENG01                      A      10.0.4.101
+ VNETINET                       A      10.0.0.14
+ VNETKALI                       A      10.0.1.100
+ VNETLOGCAP                     A      10.0.0.20
+ VNETMARK01                     A      10.0.3.101
+ VNETMSDB                       A      10.0.0.18
+ VNETPFS                        A      10.0.0.17
+ VNETSCADA01                    A      10.0.4.150
+ VNETSCADA02                    A      10.0.4.151
+ VNETSHP                        A      10.0.0.21
+ VNETUBU01                      A      10.0.0.15
+ VNETUNIXDB                     A      10.0.0.19
+ VNETVOIP                       A      10.0.0.12
+ victim.strikeforce.net.        SOA    vnetdcpki.victim.strikeforce.net hostmaster.victim.strikeforce.net. (424 900 600 86400 3600)

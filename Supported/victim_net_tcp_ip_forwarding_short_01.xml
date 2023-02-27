@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.60 scan initiated Wed May 16 01:58:14 2018 as: nmap -T4 -sS -A -oA victim_net_tcp_ip_forwarding_02 -&#45;script ip-forwarding -&#45;script-args=target=google.com -iL input_list.txt -->
+<nmaprun scanner="nmap" args="nmap -T4 -sS -A -oA victim_net_tcp_ip_forwarding_02 -&#45;script ip-forwarding -&#45;script-args=target=google.com -iL input_list.txt" start="1526450294" startstr="Wed May 16 01:58:14 2018" version="7.60" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1000" services=""/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1526450294" endtime="1526450432"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.0.254" addrtype="ipv4"/>
+<address addr="0A:00:27:00:00:22" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="987">
+
+<hostscript><script id="ip-geolocation-ipinfodb" output="&#xa;10.0.0.254&#xa;  coordinates (lat,lon): -33.7588,150.993&#xa;  city: Baulkham Hills, New South Wales, Australia&#xa;"/></hostscript>
+<hostscript><script id="ip-forwarding" output="&#xa;  The host has ip forwarding enabled, tried ping against (www.google.com)"/></hostscript>
+
+<extrareasons reason="resets" count="987"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ftp" product="FileZilla ftpd" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:filezilla-project:filezilla_server</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="microsoft-ds" product="Microsoft Windows 7 - 10 microsoft-ds" extrainfo="workgroup: WORKGROUP" hostname="GOLDINGSGYM01" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="2869"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ms-wbt-server" product="Microsoft Terminal Service" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="5357"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script></port>
+<port protocol="tcp" portid="8099"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="remoting" product="MS .NET Remoting services" method="probed" conf="10"><cpe>cpe:/a:microsoft:.net_framework</cpe></service></port>
+<port protocol="tcp" portid="49152"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49153"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49154"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49158"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49159"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<osmatch name="Version 6.1 (Build 7601: Service Pack 1)" accuracy="100" line="71070">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="100"><cpe>cpe:/o:microsoft:windows_server_2008</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7 SP0 - SP1, Windows Server 2008 SP1, Windows Server 2008 R2, Windows 8, or Windows 8.1 Update 1" accuracy="100" line="72463">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="100"><cpe>cpe:/o:microsoft:windows_7::-</cpe><cpe>cpe:/o:microsoft:windows_7::sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="100"><cpe>cpe:/o:microsoft:windows_server_2008::sp1</cpe><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8" accuracy="100"><cpe>cpe:/o:microsoft:windows_8</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8.1" accuracy="100"><cpe>cpe:/o:microsoft:windows_8.1</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 8.1 R1" accuracy="100" line="73396">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8.1" accuracy="100"><cpe>cpe:/o:microsoft:windows_8.1:r1</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="523079" lastboot="Thu May 10 00:42:34 2018"/>
+<distance value="1"/>
+<tcpsequence index="260" difficulty="Good luck!" values="C256BA2B,1303BBC7,4F3EC975,3350474D,3ACDFABB,D68532B5"/>
+<ipidsequence class="Incremental" values="6B3D,6B3E,6B3F,6B40,6B41,6B42"/>
+<tcptssequence class="100HZ" values="31E2309,31E2313,31E231D,31E2327,31E2331,31E233B"/>
+<trace>
+<hop ttl="1" ipaddr="10.0.0.254" rtt="0.49"/>
+</trace>
+<times srtt="490" rttvar="300" to="100000"/>
+<times srtt="330613" rttvar="1280" to="335733"/>
+
+</host>
+<runstats><finished time="1526450433" timestr="Wed May 16 02:00:33 2018" elapsed="138.91" summary="Nmap done at Wed May 16 02:00:33 2018; 10 IP addresses (10 hosts up) scanned in 138.91 seconds" exit="success"/><hosts up="10" down="0" total="10"/>
+</runstats>
+</nmaprun>
