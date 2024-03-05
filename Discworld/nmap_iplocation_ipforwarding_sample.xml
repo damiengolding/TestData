@@ -105,7 +105,7 @@
       </port>
     </ports>
     <hostscript>
-      <script id="ip-geolocation-ipinfodb" output="&#xA;60.100.100.1&#xA;  coordinates (lat,lon): -33.7588,150.993&#xA;  city: Baulkham Hills, New South Wales, Australia&#xA;" />
+      <script id="ip-geolocation-ipinfodb" output="&#xD;&#xA;60.100.100.1&#xD;&#xA;  coordinates (lat,lon): -33.7588,150.993&#xD;&#xA;  city: Baulkham Hills, New South Wales, Australia&#xD;&#xA;" />
     </hostscript>
     <hostscript>
       <script id="ip-forwarding" output="&#xA;  The host has ip forwarding enabled, tried ping against (www.google.com)" />
